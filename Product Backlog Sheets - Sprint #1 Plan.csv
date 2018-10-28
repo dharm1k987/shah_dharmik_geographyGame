@@ -1,0 +1,22 @@
+User Stories,Tasks,Description,Dependency,Story Points,1,2,3,4,5
+1,1.1,"Write our Tools Specifications that we will be using to build the platform. 
+Documentation of technology we are using. (Sheet Team Plan)",,4,R:2,R:2,,,
+1,1.2,Create Heroku project and server.,,2,,B:2,,,
+1,1.3,"Set up Node.js backend on the Heroku server to show a simple web page 
+containing HTML and CSS.",1.2,4,,,B:2,B:2,
+1,1.4,"Set up functionality to accept CSV files, by this we mean create the function that will handle the click request",,2,,,,,B:2
+,,,,,,,,,
+2,2.1,"Setup intial layout of web application, which involves node libraries/gitignores and standard files",,2,D:2,,,,
+2,2.2,"Create a simple HTML page with CSS styling (all with Bootstrap) which 
+has a clickable upload button, with the X logo",2.1,10,C:2,C:2,C:2,C:2,C:2
+2,2.3,"Create a simple HTML page with CSS styled (all with Bootstrap) with 
+Login Page.",2.1,10,A:2,A:2,A:2,A:2,A:2
+2,2.4,"Create a simple HTML page with CSS styled (all with Bootstrap) with 
+Create Account Page.",2.1,5,,,,,
+2,2.5,Create a Navigation Bar Sticky Header at the top of the webpage,2.1,5,,,,,
+,,,,,,,,,
+3,3.1,Flesh out the System Design of the Database Schema,,8,,D:2,D:2,D:2,D:2
+3,3.2,Code Insert Report EndPoint (Accepts JSON Objects) (No DB Needed),,2,B:2,,,,
+3,3.3,Parse the json object element by element and insert it into the database,3.2,14,,,R:2,R:2,R:2
+3,3.4,Use Axios to make a post request to the endpoints to send data.,3.2,8,,,,,
+3,3.5,"Read and parse data from an iCARE template, by using the npm package that converts csv to json",1.4,8,,,,,
